@@ -1,0 +1,23 @@
+<?php	
+session_start();
+
+	if(!isset($_SESSION["number"])) {
+		$_SESSION['number'] = rand(1,100);
+		$number = $_SESSION["number"];
+	}
+			 
+	$pick = $_POST['guess'];
+
+	if ($pick == $_SESSION["number"]) {
+		 $_SESSION["result1"] = "Congratulations You Are Magical ";
+		 unset($_SESSION["number"]);
+	}
+	elseif($pick < $_SESSION["number"]) {
+	 	$_SESSION["result2"]  = "to low, you're to slow try again";
+	 }
+	elseif($pick > $_SESSION["number"]){
+	 	$_SESSION["result3"] = "Your to high, ";
+	 }
+		
+header("location: guess.php");
+ ?> 
