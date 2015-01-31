@@ -1,0 +1,61 @@
+<php
+	session_start();
+	$errors = array();
+
+	echo "started";
+	// var_dump($_POST);
+	if(isset($_POST['action']) && $_POST['action'] == "email_validation")
+	{
+		// var_dump($_SESSION);
+
+		if(isset($_POST['email']) == false || empty($_POST['email']) )
+		{
+			$errors[]= "<h1>Email is empty. you commited a major faux pas. you suck!,</h1>";
+		} 
+		else if (filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)!== true) 
+		{			
+			$errors[]= "Something is wrong with your Attempt, Please Try Again";
+		}
+		else 
+		{
+			$_SESSION['success'] = "<h1>Your Information Was Valid<h1>";
+		}
+
+		$_SESSION['errors'] = $errors;
+		// var_dump($_SESSION);
+		header("location: email.php");
+	
+	}
+?>
+<?php 
+session_start();
+if(isset($_SESSION['errors']))
+{
+	//var_dump($_SESSION);
+	foreach($_SESSION['errors'] as $error)
+	{
+		echo "<p>".$error. "</p>";
+	}
+	unset($_SESSION['errors'] );
+}
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<div id="container"
+<h1>Please enter your email below:</h1>
+<form action="process.php" method="post"> 
+<input type="text"name="email" placeholder="email address">
+<input type = "submit" value="submit">
+<input type="hidden" name='action' value='email_validation'>
+
+</form>
+</div>
+</body>
+
+</html>
