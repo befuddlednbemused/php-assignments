@@ -1,0 +1,90 @@
+</php
+session_start()
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey</title>
+</head>
+<body>
+
+
+<form>
+          <form action='process.php'method="post">
+         <label for ="usrname">What Is Your Name?</label> 
+    	   <input type="text" name="usrname"><br>
+     
+        <label for ="select">What Dojo Are You from?</label>
+         <select name="location">
+        <option Seattle="Seattle">Select</option>
+        <option San Francisco="San Francisco">San Francisco></option>
+        <option Seattle="Seattle">Seattle</option>
+         </select><br>
+ 
+  
+  <label for ="select">Favorite Language?</label>
+   <select name='language'>
+    <option value="python">python</option>
+    <option value="jamba juice">Jamba Juice></option>
+    <option value="Snickers">Snickers</option>
+  </select><br/ >
+ 	
+	All Comments Here: <br>
+ 
+		<input type ="text" name="comments"</label>
+
+    <input type="button" name"Log In">Click Here To Join Or Log In</form>
+</form> 
+  
+  
+
+   
+  
+  <input type="submit" name="userok"value="Submit">
+</form>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey</title>
+</head>
+<body>
+
+
+<form>
+          <form action='process.php'method="post">
+         <label for ="usrname">What Is Your Name?</label> 
+    	   <input type="text" name="usrname"><br>
+     
+        <label for ="select">What Dojo Are You from?</label>
+         <select name="location">
+        <option Seattle="Seattle">Select</option>
+        <option San Francisco="San Francisco">San Francisco></option>
+        <option Seattle="Seattle">Seattle</option>
+         </select><br>
+ 
+  
+  <label for ="select">Favorite Language?</label>
+   <select name='language'>
+    <option value="python">python</option>
+    <option value="jamba juice">Jamba Juice></option>
+    <option value="Snickers">Snickers</option>
+  </select><br/ >
+ 	
+	All Comments Here: <br>
+ 
+		<input type ="text" name="comments"</label>
+
+    <input type="button" name"Log In">Click Here To Join Or Log In</form>
+</form> 
+  
+  
+
+   
+  
+  <input type="submit" name="userok"value="Submit">
+</form>
+</body>
+</html>
