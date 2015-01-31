@@ -1,0 +1,94 @@
+<?php 
+session_start();
+
+ ?>
+
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="ninjagold1.css">
+    <link rel='stylesheet'href='http://fonts.googleapis.com/css?family=Spicy+Rice|Raleway' rel='stylesheet' type='text/css'/>
+	<meta charset="utf-8">
+    <title>Ninja Gold Game</title>
+    
+
+
+</head>
+
+<body>
+
+	<div class= "gold">
+   	 <div id="doldtally">
+		<p>Your Gold ."</p>
+			<h2>Welcome To Ninja Village</h2>
+	<h3>You have just conquered a small little village on the island of ItchyKneeSanSheGo. Now it is time to reap your rewards, but first you have to venture into all the different parts of the village and take your gold.
+	but, if you feel like being daring, you could place a side bet in the casino and see just how stacked the locals have their casino!</h3>
+    <div id="doldtally">
+		<p>Your Gold:</p>
+		<?php 
+		echo'$Total'?>;
+
+		
+	</div>
+ 
+	</div>
+
+	</div>
+	
+	<div id="farmbox">
+		<h2>Farm</h2>
+		<p>(earns 10-20 gold coins)</p>
+		<form action='process.php' method="post">
+		 	<input type ='hidden' name ='building' value= 'farm'/>
+		 	<input type="submit" value="Find Gold!"/>
+		</form>
+	</div>
+	
+	<div id="cavebox">
+		<h2>Cave</h2>
+		<p>(earns 5-10 gold coins)</p>
+		<form action="process.php" method="post">
+		 	<input type ='hidden' name ='building' value= 'cave'/>
+		 	<input type="submit" value="Find Gold!"/>
+		</form>
+	</div>
+
+	<div id="housebox">
+		<h2>House</h2>
+		<p>(earns 2-25 gold coins)</p>
+		<form action='process.php' method="post">
+			 <input type ='hidden' name ='building' value= 'house'/>
+			 <input type="submit" value="Find Gold!"/>
+		</form>
+	</div>
+
+	<div id="casinobox">
+		<h2>Casino</h2>
+		<p>(earn/lose 0-50 gold coins)</p>
+		<form action='process.php' method="post">
+			 <input type ='hidden' name ='building' value= 'casino'/>
+			 <input type="submit" value="Find Gold!"/>
+		</form>
+	</div>
+	<form action="process.php" method="post" >
+		<input type-"hidden" name="restart" method"post"/>
+			<input type ="submit" name"button" value="restart from scratch"/>
+			</form>
+<hr>
+		
+	<h2>History</h2>	
+			<p>Activities</p>
+			<div class="log">
+			<hr>
+	
+		<?php
+			if(isset($_SESSION["result"])) {
+				for($i = count($_SESSION["result"])-1; $i >= 0; $i--) {
+					echo $_SESSION["result"][$i] . "<br />";
+				}
+				
+			}
+
+
+
+		?>
