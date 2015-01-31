@@ -1,0 +1,31 @@
+<?php
+session_start();
+//$_SSSION ['target1'] = $_SESSION['target2'];
+echo "welcome To The Amazing Alfredo<br />";
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></the great guessing game </title>
+	<style>
+#container{
+	background-image: "pic1.jpg";
+}
+</head>
+<body>
+	<h1>I"m thinking of a number betweeen 1 and 100!</h1>
+	<h1> Feel Lucky? Take A Guess</h1>
+	<form action ="guessprocess.php" method="post">
+			<input type="text" name="guess">
+			<input type="submit" name="Enter" value="Click to Play">
+	</form>
+	<div id="result">	
+		<?php
+		if(isset($_SESSION["result"])) {
+			echo "<h1>" . $_SESSION["result"] ."</h1>";
+			unset($_SESSION["result"]);
+		}
+?>
+</body>
+</html>
