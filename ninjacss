@@ -1,0 +1,170 @@
+
+body{
+  
+	font-family: 'Spicy Rice', cursive;
+background-color:#542D24;
+}
+#doldtally{
+  display: block;
+  margin:0, auto;
+  width: 980px;
+  background-color:black;
+  color: #FFA400;
+  text-align: center;
+  box-shadow: 51px 57px 82px -3px rgba(0,0,0,0.75);
+
+}
+
+}
+#doldtally p{
+  text-align: right;
+
+   margin-left:70%;
+   font-family: raleway, sans-serif!IMPORTANT;
+
+}
+
+#farmbox{
+
+	width: 20%;
+	height: 150px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	border: 2px solid black;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  background-color: green;
+  opacity: .8;
+  margin-top: 10%;
+  box-shadow: 51px 57px 82px -3px rgba(0,0,0,0.75);
+}
+
+
+
+#cavebox{
+	background-color: white;
+	width: 20%;
+	height: 150px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+  background-color: brown;
+  opacity: .8;
+	border: 2px solid black;
+  margin-right: 2.5%;
+  margin-top: 10%;
+  margin-left:2.5%;
+  box-shadow: 51px 57px 82px -3px rgba(0,0,0,0.75);
+}
+
+
+#housebox{
+	background-color: white;
+  opacity: .8;
+	width: 20%;
+	height: 150px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	border: 2px solid black;
+  margin-left:2.5%;
+  margin-top:10%;
+box-shadow: 51px 57px 82px -3px rgba(0,0,0,0.75);
+}
+
+#casinobox{
+
+	background-color: red;
+  opacity: .8;
+	width: 20%;
+	height: 150px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	border: 2px solid black;
+  margin-left:5%;
+  margin-top:10%;
+ box-shadow: 51px 57px 82px -3px rgba(0,0,0,0.75); 
+ 
+ 
+}
+.log{
+	width: 960px;
+	height: 300px;
+	overflow: scroll;
+  margin-left:8%;
+  background-color: black;
+  opacity:.8;
+  color:red;
+  box-shadow: 51px 57px 82px -3px rgba(0,0,0,0.75);
+}
+
+
+
+
+/*container{
+
+
+	width: 960px;
+	height: 960px;
+	background-image:url("bg.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	margin: 0 auto;
+	padding: 20px 20px;
+	border: 2px solid black;
+
+}
+
+#farmbox:
+	background-color: white;
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	border: 2px solid black;
+}
+
+
+
+#cavebox{
+	background-color: white;
+	width: 20%;
+	height: 150px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	border: 2px solid black;
+}
+
+
+#housebox{
+	background-color: white;
+	width: 20%;
+	height: 150px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	border: 2px solid black;
+
+}
+
+#casinobox{
+
+	background-color: white;
+	width: 20%;
+	height: 150px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	border: 2px solid black;
+
+}
+
+.log{
+	width: 200px;
+	height: 300px;
+	overflow: scroll;
+}*/*/
