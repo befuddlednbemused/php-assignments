@@ -1,0 +1,58 @@
+//process.php for ninja game
+
+
+<?php
+session_start();
+date_default_timezone_set("America/Los_Angeles");
+
+if(isset($SESSION['sum']))
+{
+		$_SESSION['sum'] = $_SESSION['sum'] + $_SESSION['gold'];
+	}
+else{	
+	 $_SESSION['sum'] = $sum + 0 ;
+	}
+	$Total = $_SESSION['sum'];
+
+
+if(isset($_POST["building"]) && $_POST["building"] == "farm") {
+	$farm_gold = rand(10, 20);
+	$_SESSION["gold"] += $farm_gold;
+	$result = "You entered a farm and earned " . $farm_gold . " gold coins! " . '(' . date('M d, Y h:ia') .')';
+}
+
+else if (isset($_POST["building"]) && $_POST["building"] == "cave") {
+	$cave_gold = rand(5, 10);
+	$_SESSION["gold"] += $cave_gold;
+	
+	$result ="You entered a cave and earned " .$cave_gold. " gold coins!" . '(' . date('M d, Y h:ia') . ')';
+}
+
+else if (isset($_POST["building"]) && $_POST["building"] == "house") {
+	$house_gold = rand(2, 5);
+	$_SESSION["gold"] += $house_gold;
+	$result = "You entered a house and earned " .$house_gold. " gold coins!" . '(' . date('M d, Y h:ia') . ')';
+}
+
+else
+	{
+	$casino_gold = rand(-50, 50);
+	$_SESSION["gold"] += $casino_gold;
+	$result = "You entered a casino and earned " .$casino_gold. " gold coins!" . '(' . date('M d, Y h:ia') . ')';
+	
+}
+
+ $_SESSION['result'] [] = $result;
+ ?>
+<?
+
+header("location: ninjagold1.php");
+
+if(isset($_POST['Reset'])) {
+session_destroy();
+} ?>
+}
+?>
+die();
+?>
+//
