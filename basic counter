@@ -1,0 +1,37 @@
+    <?php
+$_sessions();if(isset) $_sessions([visits]);
+
+ $_sessions([visits])=1;
+else
+     $_sessions([visits])=0+1;
+
+<!DOCTYPE html>
+<html>
+    <title>Counter</title>
+    <header>
+    
+    </header>
+    <body>
+    
+    <p> YOu Have Been Here:
+            </p>
+            echo($_session([visits]));
+        <p> Times</p>
+    <form action="process.php" method="post">
+    <input type="submit>name="reset" value="reset></form>
+    
+    
+    </body>
+
+
+
+
+</html>
+
+
+//process page for this
+<?php
+session_start();
+sesion_destroy();
+header
+    ?>
